@@ -1,0 +1,3 @@
+var e=1,t=0,n=document.querySelector(".gallery__btn--next"),l=document.querySelector(".gallery__btn--prev");function r(){var t=document.querySelectorAll(".gallery__slide");e>t.length&&(e=1),e<1&&(e=t.length);for(var n=0;n<t.length;n++)t[n].style.display="none";t[e-1].style.display="block"}function c(){clearInterval(t),t=setInterval(function(){e++,r()},5e3)}c(),n.addEventListener("click",function(){e+=1,r(),c()}),l.addEventListener("click",function(){e-=1,r(),c()}),document.getElementById("form").addEventListener("submit",function(e){document.getElementById("form").reset(),e.preventDefault()},!1);//# sourceMappingURL=index.8d0d2ddc.js.map
+
+//# sourceMappingURL=index.8d0d2ddc.js.map
